@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+
+    <package name="default"  extends="struts-default">
+
+        <action name="menuquery" class="com.rm.MenuQueryAction">
+          <result name="success">/main.jsp</result>
+          <result name="error">/login.jsp</result>
+        </action>
+    </package>
+
+  <constant name="struts.i18n.encoding" value="gb2312"></constant>
+</struts>
