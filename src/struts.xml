@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Comfiguration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+<package name="default" extends="struts-default">
+<!-- 录入学生信息 -->
+<action name="addMenuView" class="mn" method="addMenuView">
+<result name="success">/addMenu.jsp</result>
+</action>
+<action name="addMenu" class="com.rm.action.MenuAction" method="addMenu">
+<result name="success">/success.jsp</result>
+<result name="error">/error.jsp</result>
+</action>
+<action name="deleteMenu" class="com.rm.action.MenuAction" method="deleteMenu">
+<result name="success">/success.jsp</result></action>
+<!-- 点餐界面 -->
+<action name="order" class="com.rm.action.OrderAction" method="order">
+<result name="success">/success.jsp</result>
+<result name="error">/error.jsp</result>
+</action>
+</package>
+<constant name="struts.i18n.encoding" value="gb2312"></constant>
+</struts>
